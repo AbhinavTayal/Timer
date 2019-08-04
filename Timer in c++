@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{ int hour=0,min=0,sec=0;
+while (1)
+{ system("cls");
+    if ( sec<60)
+    sec++;
+    else if( sec==60)
+    {
+        sec=0;
+        min++;
+    }
+    else if ( min==60)
+    {
+        min=0;
+        hour++;
+    } cout<<"\n\nHour"<<hour<<"Minutes"<<min<<"Seconds"<<sec;
+    sleep(200);
+}
+getch();
+}
